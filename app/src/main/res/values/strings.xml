@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AgendaWS</string>
+    <string name="favorito">Marcar Favorito</string>
+    <string name="tel1">Telefono *</string>
+    <string name="tel2">Telefono Secundario</string>
+    <string name="btn_limpiar">Limpiar</string>
+    <string name="btn_listar">Listar</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="notas">Notas</string>
+    <string name="direccion">Direccion *</string>
+    <string name="nombre">Nombre *</string>
+    <string name="nuevo">Nuevo</string>
+    <string name="texto">Elementos de la Agenda</string>
+    <string name="mensaje">Contacto Guardado!</string>
+    <string name="mensajeerror">Favor de llenar todos los campos marcados con (*)</string>
+    <string name="mensajeedit">Contacto Actualizado!</string>
+</resources>

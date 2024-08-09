@@ -1,0 +1,137 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/tabla1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:layout_margin="10dp"
+                android:text="@string/nombre"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:layout_margin="10dp"
+                android:inputType="textPersonName">
+                <requestFocus />
+            </EditText>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/tel1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/tel2"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/txtTelefono1"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_margin="10dp"
+                    android:inputType="phone"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/txtTelefono2"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_margin="10dp"
+                    android:inputType="phone"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:layout_margin="10dp"
+                android:text="@string/direccion"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/txtDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_margin="10dp"
+                android:inputType="textPostalAddress"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:layout_margin="10dp"
+                android:text="@string/notas"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/txtNotas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="5"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:layout_margin="10dp"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/cbxFavorito"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:text="@string/favorito" />
+
+            <TableRow>
+                <Button
+                    android:id="@+id/btnLimpiar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/btn_limpiar" />
+                <Button
+                    android:id="@+id/btnGuardar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/btn_guardar" />
+            </TableRow>
+
+            <Button
+                android:id="@+id/btnListar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/btn_listar" />
+        </TableLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
